@@ -1,0 +1,69 @@
+.landingContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 1);
+}
+.landing {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+  }
+  
+.videoBackground {
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+.playButton {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; 
+    position: absolute; 
+    bottom: 20px; 
+    left: 50%; 
+    transform: translateX(-50%);
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    text-decoration: none;
+    border: 2px solid #8d8c8c;
+    z-index: 2;
+}
+
+.playIcon {
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-left: 20px solid #ffffff;
+    margin-left: 25px;
+    margin-bottom: 30px;
+    transform: translateX(-50%);
+}
+.playButton:hover {
+    background-color: #000000;
+    font-weight: bold;
+    border: 2px solid rgb(1, 247, 255);
+}
+.landingContainer p {
+    border-radius: 5px;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    text-align: justify;
+}
