@@ -164,7 +164,7 @@ const Form = () => {
       alert("Successfully created video game");
       resetForm(initialState);
     } catch (error) {
-      alert("The name of the game already exists");
+      alert(error);
     }
 
     // axios.post("http://localhost:3001/videogames",data)
