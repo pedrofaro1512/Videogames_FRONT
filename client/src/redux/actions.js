@@ -52,7 +52,7 @@ export const getPlatforms = () => {
     }
 };
 
-// Actions para filtrar
+// Actions para filtrar y ordenar
 export const filterByGenre = (genre) => {
     return { type: FILTER_BY_GENRE, payload: genre }
 };
