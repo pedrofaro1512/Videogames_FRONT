@@ -7,6 +7,11 @@ import store from "./redux/store";
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import axios from 'axios';
+
+//axios.defaults.baseURL = 'http://localhost:3001';
+axios.defaults.baseURL = 'https://videogamesback-production-77c7.up.railway.app/';
+
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
